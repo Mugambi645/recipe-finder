@@ -1,0 +1,108 @@
+
+.card {
+    position:relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0px 0px 20px #000000b3;
+    max-height:36em;
+    max-width:370px;
+    margin-top:30px;
+    margin-left:30px;
+    transition:.5s;
+    overflow: hidden;
+}
+.card:hover {
+    max-height: max-content !important;
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport)*/
+    z-index:100; 
+}
+.card:hover .left-section p{
+max-height:max-content;
+}
+
+.card-header {
+    height: 300px;
+    overflow: hidden;
+    position: relative
+}
+
+.card-header img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-header .cover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-header .name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 38px;
+}
+
+.container {
+    height:fit-content;
+    padding: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+
+.left-section {
+    width: 260px;
+    float: left;
+    height:100%;
+    overflow: hidden;
+}
+
+.left-section h3 {
+    color: Black;
+}
+
+.left-section p {
+    margin: 20px 0;
+    max-height:6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.left-section .detailsBtn {
+    width: 80%;
+    background: Black;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 8px 0px;
+    opacity: 0.6;
+    transition: 0.3s;
+    margin:15px 0px 0px 50px ;
+    bottom:2%;
+    
+}
+.left-section .detailsBtn:hover {
+  opacity: 1
+}
+.right-section {
+    overflow: hidden;
+    float: right;
+    text-align: right;
+}
+
+.item {
+    margin: 6px 0;
+}
+
+.num {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.word {
+    font-size:17px;
+}
