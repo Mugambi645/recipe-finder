@@ -1,10 +1,10 @@
 import React,{useEffect,useState} from 'react';
 import Recipe from './Recipe';
 import './App.css';
-import Nav
+import Navbar from './Navbar';
 function App() {
-  const APP_ID= 'd22edaf6';
-  const APP_KEY='3c135eef215569a48c5769eb6439d9f5';
+  const APP_ID= 'd4517fb4';
+  const APP_KEY='eb4dfad61b6adf739e6c497780abea88	';
   // const exampleRequest =  `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
   const [recipes,setRecipes] = useState([]);
@@ -32,10 +32,12 @@ function App() {
  }
   return (
     <div className="App">
+      <Navbar/>
       <form onSubmit={getSearch} className="search-form">
         <input type="text" className="search-bar" value={search} onChange={updateSearch}></input>
         <button type="submit"  className="search-button">Search</button>
       </form>
+      <br></br><br></br>
       <div className="receipt-card">
       {recipes.map(el =>(<Recipe key={el.recipe.label} receiptData={el.recipe}></Recipe>))}
 </div>
